@@ -8,7 +8,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.REDIRECT_URI || 5000;
-
+console.log(PORT);
 app.use(express.static(path.join(__dirname + '/public')));
 
 app.use(cors());
