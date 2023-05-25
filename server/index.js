@@ -7,8 +7,8 @@ const SpotifyWebApi = require('spotify-web-api-node');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.REDIRECT_URI || 5000;
-console.log(PORT);
+const PORT = process.env.PORT || 5000;
+
 app.use(express.static(path.join(__dirname + '/public')));
 
 app.use(cors());
